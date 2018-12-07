@@ -1,12 +1,18 @@
 import java.util.Objects;
 
 public class Premium extends Auto{
-    private String capacity;
+    private int capacity;
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }
+
+
 
     public Premium() {
     }
 
-    public Premium(String model, String age, String price, String capacity) {
+    public Premium(String model, String age, String price, int capacity) {
         super(model, age, price);
         this.capacity = capacity;
     }

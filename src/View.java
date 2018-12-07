@@ -2,12 +2,12 @@ import java.util.Scanner;
 
 public class View {
     private Controller controller;
-    int number=1;
+    int number;
     int index=0;
 
 
     public View(){
-       // number=1;
+        number=1;
         controller = new Controller();
     }
 
@@ -33,21 +33,17 @@ public class View {
 
     public void doOperations(int number){
 
-       if(number==1) {
-           FactoryClass factory = new FactoryClass();
-           Auto auto = factory.getAuto("economy");
-           auto.setModel("BMV");
-           auto.setAge("10");
-           auto.setPrice("4$");
-           controller.add(0, auto);
+       if(number==1)
+           controller.add( "Economy","BMW","5","10$");
 
-       }
+        if(number==2)
+            controller.update(0,"Premium","BMW","1","20$");
 
+        if(number==3)
+            controller.delete(2);
 
-        if(number==2) controller.update();
-        if(number==3) controller.delete();
-
-        if(number==4)  controller.show();
+        if(number==4)
+            controller.show();
     }
 
 }
