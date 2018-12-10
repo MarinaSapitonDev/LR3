@@ -1,3 +1,4 @@
+
 import java.util.AbstractList;
 
 
@@ -24,14 +25,14 @@ public class Collection<T> extends AbstractList<T> {
 
    public int sortPrice(){
        int maxPrice=0; //implement!!!!!!!!!!!
+
         return maxPrice;
     }
 
    public  int sortAge(){
-       int maxAge=0; //implement!!!!!!!!!!!
+
+       int maxAge=0;
        return maxAge;
    }
-
-
 
 }
